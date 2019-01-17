@@ -7,8 +7,8 @@ end
 
 def word_substituter(tweet)
     tweet.split.collect do |word| #calls on each word (need split to check each separately)
-        if dictionary.keys.include?(word.downcase)
-             word = dictionary[word.downcase]
+        if dictionary.keys.include?(word.downcase)#if word is in dictionary, then
+             word = dictionary[word.downcase]#the word will equal the dictionary value we assigned
         else
             word
         end
